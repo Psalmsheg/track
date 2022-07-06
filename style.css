@@ -1,0 +1,22 @@
+
+:root{
+ --accent: #443DF6;
+ --grey-text: #C3C3C3;
+ --greyest-text: #D8D8D8;
+ --normal-text: #606060;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media(max-screen: 1000px){
+    .wrapper{
+        width:95%;
+    }
+}
