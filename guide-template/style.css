@@ -27,7 +27,21 @@ body{
 
 /* End of Utilities  */
 
+.btn{
+ border: none;
+ background-color: grey;
+ color: black;
+ padding: .5em;
+ margin: 1em 0;
+}
 
+.btn-small{
+  width: 100px;
+}
+
+.btn-large{
+    width: 200px;
+}
 
 /* Header Styles   */
 
@@ -41,6 +55,24 @@ body{
 
 /* End Card-section Styles  */
 
+.card{
+
+}
+.card h3{
+
+}
+.card button{
+
+}
+
+.card-active h3{
+    /* Active style for the heading text */
+}
+.card-active button{
+     /* Active style for the button */
+     color: white;
+     background-color: var(--accent);
+} 
 
 /* End of Card-section Styles  */
 
