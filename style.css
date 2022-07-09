@@ -35,7 +35,20 @@ body{
 
 
 /* Hero-section */
-
+.radio-text{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.input-text{
+    display: flex;
+}
+.input-text p{
+    margin-left: 10px;
+}
+#radio-active{
+    color: var(--accent);
+}
 /* End of Hero-section Styles   */
 
 
