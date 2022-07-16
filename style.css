@@ -25,41 +25,275 @@ body{
     margin: 0 auto;
 }
 
+.btn{
+    border: none;
+    background-color: var(--accent);
+    color: #fff;
+    padding: .7em;
+    margin: 1em 0;
+    font-family: "Nunito";
+    border-radius: 3px;
+}
+
 /* End of Utilities  */
 
 
 
 /* Header Styles   */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+header span{
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header .navbar{
+    margin-top: 20px;
+}
+
+header li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header li a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    transition: 1s;
+    font-weight: bold;
+}
+
+header li a:hover{
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
+
+.btn-container a{
+    text-decoration: none;
+    color: var(--accent);
+    margin-right: 15px;
+}
+
+.btn-small{
+    width: 100px;
+    cursor: pointer;
+}
 /* End of  Header Styles */
 
 
 /* Hero-section */
+.hero-section{
+    text-align: center;
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section h1{
+    font-size: 45px;
+}
+
+.hero-section p{
+    color: var(--normal-text);
+    margin-top: 8px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    position: relative;
+    cursor: pointer;
+}
+
+label::before {
+    content: "";
+    border: 1px solid var(--accent);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: -3px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+.input-text:first-child label::after {
+    position: absolute;
+    left: 3.8px;
+    top: 10.7px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: -3.5px -0.8px;
+    border-radius: 50%;
+    background-color: var(--accent)
+}
+
 .radio-text{
     display: flex;
     justify-content: space-between;
     width: 30%;
+    position: absolute;
+    left: 430px;
+    margin-top: 25px;
+    
 }
-.input-text{
-    display: flex;
-}
-.input-text p{
-    margin-left: 10px;
-}
-#radio-active{
-    color: var(--accent);
+
+.input-text label{
+    margin-left: 7px;
+    margin-top: 1px;
+    font-weight: 400;
 }
 /* End of Hero-section Styles   */
 
 
-/* End Card-section Styles  */
+/* Card-section Styles  */
 
+.cards{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards button{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.card{
+    border: 1px solid var(--grey-text);
+    border-radius: 10px;
+    width: 18%;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.card p{
+    color: var(--normal-text);
+    font-size: 15px;
+}
+
+.card h2{
+    font-size: 18px;
+}
+
+.card p{
+    margin-bottom: 12px;
+}
+
+.card h1, h2, h3, p{
+    text-align: center;
+}
+
+.card-active{
+    border: 1px solid var(--accent);
+}
+
+#card-2 h1{
+    color: var(--accent);
+}
+
+#card-3 h2:last-of-type{
+    transform: translateY(1em);
+}
+
+#card-3 button {
+    transform: translateY(2.7em);
+}
+
+#card-3 .li-container{
+    transform: translateY(2.4em);
+}
+
+.card h3{
+    color: var(--normal-text);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.li-container{
+    margin: 30px 0;
+}
+
+.card li{
+    position: relative;
+    list-style: none;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.card li i{
+    position: absolute;
+    left: -25px;
+    color: green;
+    font-size: 18px;
+
+}
+
+#card-1 li:nth-child(1){
+    color: var(--normal-text);
+    /* list-style-image: url('/check.png'); */
+}
+#card-1 li:nth-child(2){
+    color: var(--greyest-text);
+}
+#card-1 li:nth-child(3){
+    color: var(--greyest-text);
+}
+
+#card-2 li:nth-child(1){
+    color: var(--normal-text);
+    /* list-style-image: url('/check.png'); */
+}
+#card-2 li:nth-child(2){
+    font-weight: bold;
+    /* list-style-image: url('/check.png'); */
+}
+#card-2 li:nth-child(3){
+    color: var(--greyest-text)
+}
+
+#card-3 li:nth-child(1){
+    color: var(--normal-text);
+    /* list-style-image: url('/check.png'); */
+}
+#card-3 li:nth-child(2){
+    font-weight: bold;
+    /* list-style-image: url('/check.png'); */
+}
+#card-3 li:nth-child(3){
+    font-weight: bold;
+    /* list-style-image: url('/check.png'); */
+}
+
+.btn-large{
+    width: 170px;
+}
+
+.card:first-of-type button, .card:last-of-type button{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--greyest-text);
+}
 
 /* End of Card-section Styles  */
 
 
    
 /* Footer Styles  */
+footer {
+    margin: 60px 0;
+}
+
 
 /* End of Footer Styles  */
 

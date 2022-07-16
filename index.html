@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <title>Track Website</title>
 </head>
 
@@ -15,15 +16,17 @@
     <!-- Header Section -->
     <header>
       <span class="logo">Track</span>
-      <nav>
-        <a href="#">Product</a>
-        <a href="#">Pricing</a>
-        <a href="#">Success Stories</a>
-        <a href="#">About Us</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
       </nav>
       <div class="btn-container">
         <a href="#">Log in</a>
-        <button class="btn-small">Sign Up</button>
+        <button class="btn btn-small">Sign Up</button>
       </div>
     </header>
     <!-- End of Header Section -->
@@ -34,12 +37,12 @@
       <p>Choose the plan that is right for your Company. All Plans include a 30-day trial.</p>
       <div class="radio-text">
         <div class="input-text">
-          <input type="radio">
-          <p id="radio-active">Billed Annually (Save 20%)</p>
+          <input type="radio" name="Click" >
+          <label id="radio-active">Billed Annually (Save 20%)</label>
         </div>
         <div class="input-text">
-          <input type="radio">
-          <p>Billed Monthly</p>
+          <input type="radio" name="Click">
+          <label>Billed Monthly</label>
         </div> 
       </div>
     </div>
@@ -47,11 +50,48 @@
 
     <!-- Card Section -->
     <div class="cards">
-      <div class="cards">
+      <div class="card" id="card-1">
         <h2>Basic</h2>
         <p>Unlimited Users</p>
         <h1>N5,000</h1>
-        <h3>/per month billed annually </h3>
+        <h3>/per month billed annually*</h3>
+        <ul class="li-container">
+          <li><i class="ri-check-line"></i> Event Reporting, Action Tracking, Dashboard</li>
+          <li>Safety Content</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <button class="btn btn-large">
+          Get started
+        </button>
+      </div>
+
+      <div class="card card-active" id="card-2">
+        <h2>Compliant</h2>
+        <p>Unlimited Users</p>
+        <h1>N20,000</h1>
+        <h3>/per month billed annually*</h3>
+        <ul class="li-container">
+          <li><i class="ri-check-line"></i> Event Reporting, Action Tracking, Dashboard</li>
+          <li><i class="ri-check-line"></i> Safety Content</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <button class="btn btn-large">
+          Get started
+        </button>
+      </div>
+
+      <div class="card" id="card-3">
+        <h2>Enterprise</h2>
+        <p>Unlimited Users</p>
+        <h2>Custom Pricing</h2>
+        <ul class="li-container">
+          <li><i class="ri-check-line"></i> Event Reporting, Action Tracking, Dashboard</li>
+          <li><i class="ri-check-line"></i> Safety Content</li>
+          <li><i class="ri-check-line"></i> Dedicated Support</li>
+        </ul>
+        <button class="btn btn-large">
+          Get started
+        </button>
       </div>
 
     </div>
@@ -59,7 +99,7 @@
 
     <!-- Footer Section -->
     <footer>
-
+      <p>Frequently asked questions</p>
     </footer>
     <!--End Footer Section -->
   </div>
